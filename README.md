@@ -17,4 +17,7 @@ https://github.com/Cogito2012/CarCrashDataset
 
 ### Dataset Preparation
 
-Firstly we extract frames from videos and we have 50 frame images for each videos.While doing this we used dense optical flow method called Farneback Optical Flow. Thus our dataset has been reduces to 24 frames for each videos. Now we have 4500 videos and each videos has 24 optical flow output frames. While doing this we extract optical flow outputs in 3 types which are magnitude based, orientation based  and magnitude*orientation based. 
+Firstly we extract frames from videos and we have 50 frame images for each videos.While doing this we used dense optical flow method called Farneback Optical Flow. Thus our dataset has been reduces to 24 frames for each videos. Now we have 4500 videos and each videos has 24 optical flow output frames. While doing this we extract optical flow outputs in 3 types which are magnitude based, orientation based  and magnitude*orientation based. After extracting optical flow we extract feature with using VGG-16 Convolutional Neural Network from fully connected layer and get (4096,1) array for each frame. Here we have 4500 videos and each videos has 24 arrays in format (4096,1) which are came VGG-16. We did this operation all of 3 types in optical flows and we get same format all of them.
+![vgg-16](https://user-images.githubusercontent.com/59515015/167940559-c709e50e-ee89-43ea-b7a3-aa42b23b1be0.png)
+
+
