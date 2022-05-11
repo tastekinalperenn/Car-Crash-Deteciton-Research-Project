@@ -20,4 +20,8 @@ https://github.com/Cogito2012/CarCrashDataset
 Firstly we extract frames from videos and we have 50 frame images for each videos.While doing this we used dense optical flow method called Farneback Optical Flow. Thus our dataset has been reduces to 24 frames for each videos. Now we have 4500 videos and each videos has 24 optical flow output frames. While doing this we extract optical flow outputs in 3 types which are magnitude based, orientation based  and magnitude*orientation based. After extracting optical flow we extract feature with using VGG-16 Convolutional Neural Network from fully connected layer and get (4096,1) array for each frame. Here we have 4500 videos and each videos has 24 arrays in format (4096,1) which are came VGG-16. We did this operation all of 3 types in optical flows and we get same format all of them.
 ![vgg-16](https://user-images.githubusercontent.com/59515015/167940559-c709e50e-ee89-43ea-b7a3-aa42b23b1be0.png)
 
+In YOLO part, we work on related 24 frames on original frame images and detect cars.We calculate 3 different values at this point. First value is number of car count in the video frame images, second value is minumum distance between two nearest cars (if there is no car we initialize same value like -1 for all of video frames) and thirdly we calculate IOU(interseciton over union) with using bounding boxes two nearest cars (if there is no car we did same thing above). And we create our last dataset which is include (4096,1) from magnitude*orientation oprical flow and (3,1) from YOLO and finally we have (4099,1) for each 24 frames in all of videos.
 
+
+
+![carrrr](https://user-images.githubusercontent.com/59515015/167941923-6b24e348-0997-48cb-95d7-9f3550af9b9b.png)
