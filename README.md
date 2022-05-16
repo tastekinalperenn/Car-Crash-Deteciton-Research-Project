@@ -38,7 +38,7 @@ Since RNN is used to predict time-varying events, we combined our inputs into pa
 <ol>
   <li>Magnitude based Optical Flow Dataset (90000,5,4096)</li>
   <li>Orientation based Optical Flow Dataset (90000,5,4096)</li>
-  <li>Magnitude*Orientation based Optical Flow Dataset (90000,5,4096))</li>
+  <li>Magnitude*Orientation based Optical Flow Dataset (90000,5,4096)</li>
   <li>Magnitude*Orientation based Optical Flow and YOLO Dataset (70000,5,4099)</li>
 </ol>
 
