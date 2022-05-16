@@ -21,10 +21,13 @@ Firstly we extract frames from videos and actually we have 50 frame images for e
 ![vgg-16](https://user-images.githubusercontent.com/59515015/167940559-c709e50e-ee89-43ea-b7a3-aa42b23b1be0.png)
 
 In YOLO part, we work on related 24 frames on original frame images and detect cars.We calculate 3 different values at this point. First value is number of car count in the video frame images, second value is minumum distance between two nearest cars (if there is no car we initialize same value like -1 for all of video frames) and thirdly we calculate IOU(interseciton over union) with using bounding boxes two nearest cars (if there is no car we did same thing above). And we create our last dataset which is include (1,4096) from magnitude*orientation oprical flow and (3,1) from YOLO and finally we have (1,4099) for each 24 frames in all of videos. Now we have 4 dataset from 4500 video and each video have 24 arrays and their shape are here:
--Magnitude based Optical Flow Dataset (1,4096)
--Orientation based Optical Flow Dataset (1,4096)
--Magnitude*Orientation based Optical Flow Dataset (1,4096)
--Magnitude*Orientation based Optical Flow and YOLO Dataset (1,4099)
+<ol>
+  <li>Magnitude based Optical Flow Dataset (1,4096)</li>
+  <li>Orientation based Optical Flow Dataset (1,4096)</li>
+  <li>Magnitude*Orientation based Optical Flow Dataset (1,4096)</li>
+  <li>Magnitude*Orientation based Optical Flow and YOLO Dataset (1,4099)</li>
+</ol>
+
 
 
 
