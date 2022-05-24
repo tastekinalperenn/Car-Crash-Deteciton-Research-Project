@@ -82,10 +82,10 @@ In general, our model can successfully predict negative situations. However, it 
 
 
 Hacettepe University Computer Science
+<br />
+Alperen Tastekin 
+<br />
+Berk Karaimer
 
-<ol>
-  <li>Alperen Tastekin</li>
-  <li>Berk Karaimer</li>
-</ol>
 
 
