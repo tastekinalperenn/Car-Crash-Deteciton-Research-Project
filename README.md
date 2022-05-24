@@ -82,5 +82,6 @@ In general, our model can successfully predict negative situations. However, it 
 
 
 Hacettepe University Computer Science
+
 Alperen Tastekin
 Berk Karaimer
