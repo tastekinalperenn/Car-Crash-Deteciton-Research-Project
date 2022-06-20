@@ -48,7 +48,7 @@ You can acces these dataset with this link https://drive.google.com/drive/folder
 While estimating Car Crash, we used the LSTM model, which is a special RNN model used for the variation of time-dependent events. We prepared our model as follows.
 ![MODEL](https://user-images.githubusercontent.com/59515015/170105289-548740b9-ac89-49b9-9d7d-353c92c9518e.png)
 
-The input shape here has been changed to (5,4096) for the Magnitude,Orientation and Magnitude*Orientation datasets, to (5,4099) for the Magnitude*Orientation + YOLO dataset. Also, since we made a binary classification as a loss function in our model, we used the 'binary cross entropy' loss function. We decided to experiment with variables such as learning rate and batch size in different ways and stay that way in the final state.
+The input shape here has been changed to (5,4096) for the Magnitude,Orientation and Magnitude* Orientation datasets, to (5,4099) for the Magnitude* Orientation + YOLO dataset. Also, since we made a binary classification as a loss function in our model, we used the 'binary cross entropy' loss function. We decided to experiment with variables such as learning rate and batch size in different ways and stay that way in the final state.
 
 We divided our dataset into 0.7 trains and 0.3 tests. We also divided our train set into 0.7 train and 0.3 validation during the train. The results we got according to the datasets are as follows:
 
